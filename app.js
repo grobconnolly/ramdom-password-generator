@@ -34,3 +34,4 @@ var arr = ['a', 'b', 'c', 'd', 'e', 'D', 'T', 'L', 1 , 2, 3, 4, 5, 6, 7, 8, 9, 1
 arr = shuffle(arr);
 console.log(arr);
 
+// test
