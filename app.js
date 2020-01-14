@@ -1,37 +1,69 @@
 
+var slider = new Slider('#slider1',{
+  tooltip: 'always'
+});
 
-function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
-  
+//generate a password
 
-    while (0 !== currentIndex) {
-  
-      
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-  
-     
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-var pwLength = prompt('how long would you like your password to be (pick a number beween 5 - 10)');
+function passwordGenerator () {
 
-if (pwLength <= 4 ) {
-    alert("Password too short")
-} else if (pwLength >= 5 || pwLength <= 10) {
-    alert("Great, your password will be " + pwLength + " characters long.")
+    // how long is the password going to be?
+    var passwordLength = document.getElementById('slider1').value;
+
+   
+  // characters options for PW
+
+  const values = "ABCDEFGHIJKLabcdefghikk0123456789!@#$%";
+
+  
+  // defining password
+  var password = "";
+
+
+// creating a loop to choose password
+
+for (var i = 0; i <= passwordLength; i++) {
+    password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length -1)));
+}
+  
+// adding the password to the content area
+document.getElementById('sliderValue').textContent = (passwordLength);
+
+document.getElementById('display').value = password;
+
 }
 
-array.length = pwLength;
+const copyToClipBoard = str => {
+  const el = document.createElement('texarea');
+  el.value = str;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+}
 
-    return array;
-  }
+passwordGenerator(); // To start with a value
 
 
-var arr = ['a', 'b', 'c', 'd', 'e', 'D', 'T', 'L', 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, '#', '!'];
-arr = shuffle(arr);
-console.log(arr);
+// //generate password
 
-// test agsin
+// function createPw () {
+
+//   //length of pw
+// var pwLength = document.getElementById('slider').value;
+
+// //values to create a password
+// const values = "abcdefPOIUTREW123456!@#";
+
+// var password = '';
+
+
+// // create loop to choose password 
+// for(var i = 0; i <= pwLength; i++) {
+//   password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
+// }
+
+// // add password to textbox
+
+// document.getElementById('display').value = password;
+// }

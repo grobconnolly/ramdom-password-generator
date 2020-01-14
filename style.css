@@ -1,0 +1,24 @@
+.backgroundWhite {
+
+    background-color: whiye;
+}
+
+
+.backgroundGray {
+    background-color: lightgray;
+}
+
+.passwordBox {
+
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+
+
+.passGenButton {
+    color: white;
+    background-color: red;
+    margin-right: 90px;
+}
+
