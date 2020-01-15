@@ -1,24 +1,54 @@
 .backgroundWhite {
 
-    background-color: whiye;
+    background-color: white;
+    border: darkgray 2px solid;
+    padding-bottom: 25px;
 }
 
 
 .backgroundGray {
     background-color: lightgray;
+    width: 100%;
+    height: 500%;
 }
 
 .passwordBox {
 
-    width: 400px;
+    width: 700px;
     height: 200px;
     text-align: center;
 }
 
 
+
+
+body {
+    height: 100%;
+    background-color: lightgray;
+}
+
+.headText {
+    padding: 50px;
+}
+
+.buttonOnClick {
+    margin: 20px;
+}
 .passGenButton {
     color: white;
     background-color: red;
-    margin-right: 90px;
+    margin-right: 15%;
+    height: 40px;
+    border-radius: 12px;
+}
+.copyButton {
+    margin-left: 15%;
+    background-color: darkgray;
+    color: white;
+    height: 40px;
+    border-radius: 12px;
 }
 
+textarea {
+font-size: 20px;
+}

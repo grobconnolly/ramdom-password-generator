@@ -33,14 +33,16 @@ document.getElementById('display').value = password;
 
 }
 
-const copyToClipBoard = str => {
-  const el = document.createElement('texarea');
-  el.value = str;
-  document.body.appendChild(el);
-  el.select();
-  document.execCommand('copy');
-  document.body.removeChild(el);
+function selectText() {
+  const input = document.getElementById('display');
+  input.focus();
+  input.select();
+  document.execCommand('copy')
 }
+
+
+
+
 
 passwordGenerator(); // To start with a value
 
