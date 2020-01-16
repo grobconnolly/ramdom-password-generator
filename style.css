@@ -20,8 +20,6 @@
 }
 
 
-
-
 body {
     height: 100%;
     background-color: lightgray;
@@ -50,5 +48,13 @@ body {
 }
 
 textarea {
-font-size: 20px;
+padding: 20px;
+font-size: 27px;
+color: #4f4f4f;
 }
+
+.titleClass {
+
+    padding-top: 10px;
+}
+

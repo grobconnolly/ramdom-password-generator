@@ -1,4 +1,5 @@
 
+// silder. 
 var slider = new Slider('#slider1',{
   tooltip: 'always'
 });
@@ -27,45 +28,20 @@ for (var i = 0; i <= passwordLength; i++) {
 }
   
 // adding the password to the content area
-document.getElementById('sliderValue').textContent = (passwordLength);
 
+
+
+
+document.getElementById('sliderValue').textContent = (passwordLength);
 document.getElementById('display').value = password;
 
 }
 
+
+//copy to clipboard
 function selectText() {
   const input = document.getElementById('display');
   input.focus();
   input.select();
   document.execCommand('copy')
 }
-
-
-
-
-
-passwordGenerator(); // To start with a value
-
-
-// //generate password
-
-// function createPw () {
-
-//   //length of pw
-// var pwLength = document.getElementById('slider').value;
-
-// //values to create a password
-// const values = "abcdefPOIUTREW123456!@#";
-
-// var password = '';
-
-
-// // create loop to choose password 
-// for(var i = 0; i <= pwLength; i++) {
-//   password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
-// }
-
-// // add password to textbox
-
-// document.getElementById('display').value = password;
-// }
