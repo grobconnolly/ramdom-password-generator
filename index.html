@@ -36,7 +36,7 @@
                                         <p>Select PW Length</p>
                                     <input id="slider1" type="range" min="8" max="128" value="8" onchange="sliderMove()"
                                         class="robClass">
-                                    <span id="num"></span>
+                                    <span id="num">8</span>
                                 </div>
                                 <br />
 
@@ -46,7 +46,7 @@
                                 <br />
                                 <button onclick="passwordGenerator()" class="passGenButton buttonOnClick">Generate
                                     Password</button>
-                                <button class="buttonOnClick copyButton" onclick="selectText()">Copy to
+                                <button class="buttonOnClick copyButton" defaultValue="8" onclick="selectText()">Copy to
                                     clipboard</button>
                                 <div id='length'></div>
                             </div>

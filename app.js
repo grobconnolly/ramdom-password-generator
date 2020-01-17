@@ -1,8 +1,9 @@
+
 //generate a password function
 function passwordGenerator () {
 
 // Length of the password?
-var passwordLength = document.getElementById('num').value;
+var passwordLength = document.getElementById('slider1').value;
 
 
 // characters options for PW
@@ -25,9 +26,12 @@ document.getElementById('display').value = password;
 }
 
 // adjust value when moving slider
-function sliderMove(){
- document.getElementById('num').value = document.getElementById('slider1').value;
- document.getElementById('num').textContent = document.getElementById('num').value;
+// function sliderMove(){
+//  document.getElementById('num').value = document.getElementById('slider1').value;
+//  document.getElementById('num').textContent = document.getElementById('num').value;
+// }
+function sliderMove() {
+  document.getElementById('num').textContent = document.getElementById('slider1').value;
 }
 
 //copy to clipboard
