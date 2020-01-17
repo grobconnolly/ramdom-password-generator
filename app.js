@@ -1,42 +1,34 @@
-
-// silder. 
-var slider = new Slider('#slider1',{
-  tooltip: 'always'
-});
-
-//generate a password
-
+//generate a password function
 function passwordGenerator () {
 
-    // how long is the password going to be?
-    var passwordLength = document.getElementById('slider1').value;
+// Length of the password?
+var passwordLength = document.getElementById('num').value;
 
-   
-  // characters options for PW
 
-  const values = "ABCDEFGHIJKLabcdefghikk0123456789!@#$%";
+// characters options for PW
+const values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
 
-  
-  // defining password
-  var password = "";
+
+// defining password
+
+var password = "";
 
 
 // creating a loop to choose password
 
-for (var i = 0; i <= passwordLength; i++) {
+for (var i = 1; i <= passwordLength; i++) {
     password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length -1)));
 }
   
 // adding the password to the content area
-
-
-
-
-document.getElementById('sliderValue').textContent = (passwordLength);
 document.getElementById('display').value = password;
-
 }
 
+// adjust value when moving slider
+function sliderMove(){
+ document.getElementById('num').value = document.getElementById('slider1').value;
+ document.getElementById('num').textContent = document.getElementById('num').value;
+}
 
 //copy to clipboard
 function selectText() {
@@ -45,3 +37,5 @@ function selectText() {
   input.select();
   document.execCommand('copy')
 }
+
+

@@ -17,6 +17,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="topText">
+                    <!-- Header -->
                     <h1 class="text-center text-dark headText">Password Generator</h1>
                 </div>
 
@@ -24,16 +25,29 @@
                     <div class='row'>
                         <div class="col-lg-12 col-sm-12 text-center">
                             <div class="content backgroundWhite">
+                                <!-- Sub Header -->
                                 <h4 class="titleClass">Generate a Password</h4>
                                 <br />
-                                <input id="slider1" type='range' min='8' max='128' name="slider"
-                                    class="robClass">
-                                <span id='sliderValue'></span>
+
+
+
+                                <!-- Slider -->
+                                <div class="slidecontainer">
+                                        <p>Select PW Length</p>
+                                    <input id="slider1" type="range" min="8" max="128" value="8" onchange="sliderMove()"
+                                        class="robClass">
+                                    <span id="num"></span>
+                                </div>
                                 <br />
-                                <textarea class="passwordBox" type="text" id="display" placeholder="Your Secure Password"></textarea>
+
+                                <!-- Password Box -->
+                                <textarea class="passwordBox" type="text" id="display"
+                                    placeholder="Your Secure Password"></textarea>
                                 <br />
-                                <button onclick="passwordGenerator()" class="passGenButton buttonOnClick">Generate Password</button>
-                                <button class="buttonOnClick copyButton" onclick="selectText()">Copy to clipboard</button>
+                                <button onclick="passwordGenerator()" class="passGenButton buttonOnClick">Generate
+                                    Password</button>
+                                <button class="buttonOnClick copyButton" onclick="selectText()">Copy to
+                                    clipboard</button>
                                 <div id='length'></div>
                             </div>
                         </div>

@@ -14,7 +14,7 @@
 
 .passwordBox {
 
-    width: 700px;
+    width: 500px;
     height: 200px;
     text-align: center;
 }
@@ -49,7 +49,7 @@ body {
 
 textarea {
 padding: 20px;
-font-size: 27px;
+font-size: 19px;
 color: #4f4f4f;
 }
 
@@ -58,3 +58,33 @@ color: #4f4f4f;
     padding-top: 10px;
 }
 
+
+@media (max-width: 537px) {
+    .passGenButton {
+        color: white;
+        background-color: red;
+        margin-right: 1%;
+        height: 40px;
+        border-radius: 12px;
+    }
+    .copyButton {
+        margin-left: 1%;
+        background-color: darkgray;
+        color: white;
+        height: 40px;
+        border-radius: 12px;
+    }
+    .passwordBox {
+        width: 400px;
+        height: 200px;
+        text-align: center;
+    }
+    .backgroundWhite {
+
+        background-color: white;
+        border: darkgray 2px solid;
+        padding-bottom: 25px;
+        padding-left: 20px;
+    }
+
+} 
