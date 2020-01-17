@@ -88,3 +88,70 @@ color: #4f4f4f;
     }
 
 } 
+
+@media (max-width: 461px) {
+    .passGenButton {
+        color: white;
+        background-color: red;
+        margin-right: 1%;
+        height: 20px;
+        font-size: 10px;
+        border-radius: 12px;
+    }
+    .copyButton {
+        margin-left: 1%;
+        background-color: darkgray;
+        color: white;
+        height: 20px;
+        font-size: 10px;
+        border-radius: 12px;
+    }
+    .passwordBox {
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .backgroundWhite {
+
+        background-color: white;
+        border: darkgray 2px solid;
+        padding-bottom: 25px;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 354px) {
+        .passGenButton {
+            color: white;
+            background-color: red;
+            margin-right: 1%;
+            height: 20px;
+            font-size: 8px;
+            border-radius: 12px;
+        }
+        .copyButton {
+            margin-left: 1%;
+            background-color: darkgray;
+            color: white;
+            height: 20px;
+            font-size: 10px;
+            border-radius: 12px;
+        }
+        .passwordBox {
+            width: 200px;
+            height: 300px;
+            text-align: center;
+        }
+        .backgroundWhite {
+    
+            background-color: white;
+            border: darkgray 2px solid;
+            padding-bottom: 25px;
+            padding-left: 20px;
+        }
+        textarea {
+            padding: 20px;
+            font-size: 12px;
+            color: black;
+            }
+
+} 
